@@ -10,8 +10,13 @@
    const addReview = (req, res) => {
     res.render('NewReview', { title: 'Add review' });
    };
+   /* GET 'Contact Us' page */
+   const contact = (req, res) => {
+      res.render('contact', { title: 'Contact Us' });
+     };
    module.exports = {
     homelist,
     locationInfo,
-    addReview
+    addReview,
+    contact
    };

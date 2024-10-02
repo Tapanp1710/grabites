@@ -16,6 +16,7 @@ html
       }
       .navbar .nav-link {
         font-size: 1rem; /* Increase font size of links */
+        margin-right: 20px; /* Add margin to the right of each link */
       }
   body
     nav.navbar.fixed-top.navbar-expand-md.navbar-light
@@ -24,9 +25,11 @@ html
         button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarMain')
           span.navbar-toggler-icon
         #navbarMain.navbar-collapse.collapse
-          ul.navbar-nav.mr-auto
+          ul.navbar-nav.mr-auto.d-flex.align-items-center
             li.nav-item
               a.nav-link(href='/about/') About
+            li.nav-item
+              a.nav-link(href='/contact/') Contact
     .container.content
       block content
     footer
